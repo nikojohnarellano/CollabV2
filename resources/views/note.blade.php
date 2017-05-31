@@ -52,14 +52,14 @@
             </div>
         </div>
         <hr />
-        <div class="inner-container">
+        <div id="comment-write" class="inner-container">
             <h4>Post a Comment: </h4>
             <form role="form" id="comment-form" method="POST" action="{{ url("/notes/" . $note->id) }}">
                 {{ method_field('PUT') }}
                 {{ csrf_field() }}
 
                 <div class="form-group">
-                    <textarea rows="4" cols="100" maxlength="500" id="comment" name="comment" for="comment-form"></textarea>
+                    <textarea rows="4" maxlength="500" id="comment" name="comment" for="comment-form"></textarea>
                 </div>
                 <input type="submit" class="btn btn-primary">
             </form>

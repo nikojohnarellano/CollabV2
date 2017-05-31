@@ -720,15 +720,21 @@ table.dataTable thead .sorting:after {
 }
 
 #my-notes textarea, .note-list {
-    max-width: 50%;
-    min-width: 70%;
+    width:100%;
+    resize:vertical;
 }
+
 #my-notes .title-text {
     height: 100px;
 }
 
 #my-notes .note-text {
     height: 300px;
+}
+
+#comment-write textarea {
+    width:100%;
+    resize: vertical;
 }
 
 #categories-list, #note-container {
