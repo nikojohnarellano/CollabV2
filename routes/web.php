@@ -17,7 +17,6 @@ Route::get('/', [
     'uses' => 'Auth\LoginController@showLoginForm'
 ]);
 
-
 // Authentication Routes...
 Route::get('login', [
     'as' => 'login',
@@ -55,6 +54,7 @@ Route::get('password/reset/{token}', [
     'as' => 'password.reset',
     'uses' => 'Auth\ResetPasswordController@showResetForm'
 ]);
+
 
 
 //Auth::routes();

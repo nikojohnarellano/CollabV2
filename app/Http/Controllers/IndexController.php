@@ -13,8 +13,10 @@ use App;
 
 class IndexController extends Controller
 {
+
     public function __construct()
     {
+        $this->middleware('auth');
         $this->note_repo = App::make('App\Repository\Instance\NoteRepository');
     }
 
