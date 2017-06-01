@@ -10,6 +10,8 @@
 
     <title>Collab</title>
 
+    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
