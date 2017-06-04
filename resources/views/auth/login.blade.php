@@ -1,8 +1,10 @@
 @extends('layouts.auth')
 @section('content')
     <div class="row">
-        <div class="col-md-4 col-md-offset-4 text-center">
-            <span style="color:white; font-size:80px;">Collab</span>
+        <div style="color:white;" class="col-md-4 col-md-offset-4 text-center">
+            <span style="font-size:80px;">Collab</span>
+            <br/>
+            <span style="font-size:20px;">Share programming notes to your fellow students!</span>
         </div>
     </div>
     <div class="row">
