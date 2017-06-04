@@ -27,7 +27,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $notes = $this->note_repo->selectAll();
+        $notes = $this->note_repo->selectAll()
+                                 ->sortByDesc(function($note)
+                                    {
+                                        return $note->created_at;
+                                    });
 
         return view('home', compact('notes'));
     }
