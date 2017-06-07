@@ -36,6 +36,7 @@ class IndexController extends Controller
         return view('home', compact('notes'));
     }
 
+
     /**
      * Show the categories page.
      *

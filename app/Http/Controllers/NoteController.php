@@ -42,10 +42,7 @@ class NoteController extends Controller
      */
     public function create()
     {
-        $notes = $this->note_repo->selectAll()
-                                 ->where('owner', '=', Auth::user()->id);
-
-        return view('my-notes', compact('notes'));
+        return view('post-note');
     }
 
     /**
@@ -129,6 +126,13 @@ class NoteController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showMyNotes()
+    {
+        $notes = $this->note_repo->selectAll()->where('owner', '=', Auth::user()->id);
+
+        return view('my-notes', compact('notes'));
     }
 
     /**

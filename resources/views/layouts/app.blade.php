@@ -110,7 +110,10 @@
                             <a href="/home" class="active"><i class="fa fa-dashboard fa-fw"></i> Notes Feed</a>
                         </li>
                         <li>
-                            <a href="/notes/create"><i class="fa fa-sticky-note fa-fw"></i> My notes</a>
+                            <a href="/notes/create"><i class="fa fa-pencil-square-o fa-fw"></i> Post note</a>
+                        </li>
+                        <li>
+                            <a href="/my-notes"><i class="fa fa-sticky-note fa-fw"></i> My notes</a>
                         </li>
                         <li>
                             <a href="/categories"><i class="fa fa-tags fa-fw"></i> Categories</a>

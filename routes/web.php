@@ -67,5 +67,9 @@ Route::get('/notes-per-category', 'NoteController@showNotesPerCategory');
 
 Route::post('/search', 'NoteController@showNotesFromSearch');
 
+Route::get('/my-notes', 'NoteController@showMyNotes');
+
+
+
 // Notes Routes
 Route::resource('notes', 'NoteController');
