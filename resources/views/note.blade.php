@@ -22,7 +22,7 @@
     </span>
         <hr />
         <p>
-        <pre><code> {{ $note->answer }} </code></pre>
+        <pre><code>{{ $note->answer }}</code></pre>
         </p>
         <h4>Comments: </h4>
         <div class="post">
